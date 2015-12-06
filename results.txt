@@ -1,0 +1,87 @@
+Some notes about the data. Invalid entries are ones where I couldn't get the program to read the data.
+Useless entries are reviews where no one has rated if it was helpful or not. In both instances, the review
+was ignored. However, the review still counted towards the number of entries used in training, so training
+size is smaller than it may initially appear. A review was considered helpful if at least 50% of people
+found it helpful (I may do some tests where 50% is considered unhelpful).
+
+Future tests include classifying both review summary and text simuntaniously, and classifying based on
+miscelanious factors of the review (length of the review, score, etc.)
+
+
+Test 1:
+File: Movies.txt
+Classification: Only Review Summary with textblob NaiveBayesClassifier
+
+Output:
+10000 entries were processed, with 0 invalid entries and 2578 useless entries
+Training Size: 1000 , minus 0 invalid entries and 230 uselsess entries
+Classification Size: 9000 , minus 0 invalid entries and 2348 uselsess entries
+Correct Classifications: 4275
+Incorrect Classifications: 2377
+Acuracy: 64.2663860493 percent
+Elapsed Time: 1450.36000013
+
+Test 2:
+File: Movies.txt
+Classification: Only Review Summary with textblob NaiveBayesClassifier
+
+Output:
+9999 entries were processed, with 0 invalid entries and 2578 useless entries
+Training Size: 100 , minus 0 invalid entries and 28 uselsess entries
+Classification Size: 9899 , minus 0 invalid entries and 2550 uselsess entries
+Correct Classifications: 4850
+Incorrect Classifications: 2500
+Acuracy: 65.9863945578 percent
+Elapsed Time: 134.819000006
+
+Test 3:
+File: Movies.txt
+Classification: Only Review Text with textblob NaiveBayesClassifier
+
+Output:
+10000 entries were processed, with 0 invalid entries and 2578 useless entries
+Training Size: 50 , minus 0 invalid entries and 18 uselsess entries
+Classification Size: 9950 , minus 0 invalid entries and 2560 uselsess entries
+Correct Classifications: 4876
+Incorrect Classifications: 2515
+Acuracy: 65.9721282641 percent
+Elapsed Time: 710.589999914
+
+Test 4:
+File: Movies.txt
+Classification: Only Review Text with textblob NaiveBayesClassifier
+
+Output:
+10000 entries were processed, with 0 invalid entries and 2578 useless entries
+Training Size: 100 , minus 0 invalid entries and 28 uselsess entries
+Classification Size: 9900 , minus 0 invalid entries and 2550 uselsess entries
+Correct Classifications: 4823
+Incorrect Classifications: 2528
+Acuracy: 65.610121072 percent
+Elapsed Time: 1277.21099997
+
+Test 5:
+File: Movies.txt
+Classification: Only Review Text with textblob NaiveBayesClassifier
+
+Output:
+100000 entries were processed, with 0 invalid entries and 26605 useless entries
+Training Size: 50 , minus 0 invalid entries and 18 uselsess entries
+Classification Size: 99950 , minus 0 invalid entries and 26587 uselsess entries
+Correct Classifications: 51480
+Incorrect Classifications: 21884
+Acuracy: 70.1706559075 percent
+Elapsed Time: 6789.13100004
+
+Test 6:
+File: Movies.txt
+Classification: Only Review Text with textblob NaiveBayesClassifier, starting at review 1,000,000
+
+Output:
+100000 entries were processed, with 8 invalid entries and 25219 useless entries
+Training Size: 50 , minus 7 invalid entries and 0 uselsess entries
+Classification Size: 99950 , minus 1 invalid entries and 25219 uselsess entries
+Correct Classifications: 24244
+Incorrect Classifications: 50487
+Acuracy: 32.4416908646 percent
+Elapsed Time: 16154.523
