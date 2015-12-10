@@ -85,3 +85,41 @@ Correct Classifications: 24244
 Incorrect Classifications: 50487
 Acuracy: 32.4416908646 percent
 Elapsed Time: 16154.523
+
+Test 7:
+File: Movies.txt
+Classification: Only Review Text with textblob NaiveBayesClassifier, starting at review 3,000,000
+
+Output:
+100000 entries were processed, with 35 invalid entries and 24449 useless entries
+Training Size: 50 , minus 32 invalid entries and 0 uselsess entries
+Classification Size: 99950 , minus 3 invalid entries and 24449 uselsess entries
+Correct Classifications: 52969
+Incorrect Classifications: 22530
+Acuracy: 70.1585451463 percent
+Elapsed Time: 15057.493
+
+Test 8:
+File: Movies.txt
+Classification: Review and Summary text with textblob NiaveBayesClassifier
+
+Output:
+9999 entries were processed, with 0 invalid entries and 2578 useless entries
+Training Size: 50 , minus 0 invalid entries and 18 uselsess entries
+Classification Size: 9949 , minus 0 invalid entries and 2560 uselsess entries
+Correct Classifications: 4885
+Incorrect Classifications: 2505
+Acuracy:  66.1028416779 percent
+
+Test 9:
+File: Movies.txt
+Classification: Review and Summary text with textblob NiaveBayesClassifier
+
+Output:
+99999 entries were processed, with 0 invalid entries and 26605 useless entries
+Training Size: 50 , minus 0 invalid entries and 18 uselsess entries
+Classification Size: 99949 , minus 0 invalid entries and 26587 uselsess entries
+Correct Classifications: 51536
+Incorrect Classifications: 21827
+Acuracy: 70.2479451495 percent
+Elapsed Time: 7929.05999994
